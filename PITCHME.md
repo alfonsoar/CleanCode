@@ -34,7 +34,7 @@
 
 ### Why is Clean Code Important
 
-![Graph](assets/ProductivityTime.png)
+![Graph](img/ProductivityTime.png)
 
 Note:
 - Time is Application Age
@@ -44,10 +44,6 @@ Note:
 ---
 
 ### What is Clean Code to you?
-
-> I like my code to be **elegant** and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies **minimal** to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does **one** thing well.
-
-+++
 
 > Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
 
@@ -63,11 +59,6 @@ Note:
 - Functions |
 - Code Readability |
 - Refactoring |
-
-
----
-
-![Naming](img/Naming.jpg)
 
 ---
 
@@ -200,7 +191,7 @@ if (employee.isEligibleForBonus())
 
 #### Building Blocks
 
-![Blocks](assets/image/blocks.jpeg)
+![Blocks](img/Blocks.jpeg)
 
 Note:
 - Level Of Astraction
@@ -289,10 +280,10 @@ def makeReservation(quantity, date, restaurantId):
 		return None # Client Handles None
 ```
 
-@[2-9](Code is easy to read, seems straighfoward what we are doing)
-@[3](Here is our culprit, making we are mixing a database call with our business logic)
+@[2-9](Code is easy to read, seems straightfoward what we are doing)
+@[3](Here is our culprit - we are mixing a database call with our business logic)
 @[4-6](This is our business logic)
-@[7](More of this impure **Hogwash**!)
+@[7](More of this impure sandwich!)
 
 +++
 
@@ -316,7 +307,7 @@ def canMakeReservation(quantity, date, restaurant):
 def reserve(reservation):
 	return Restaurant.reserve(reservation)
 
-# Impure Sandwhich
+# Impure Sandwich
 def makeReservation(quantity, date, restaurantId):
 	return _.compose(
 			getRestaurant(restaurantId),
@@ -327,7 +318,7 @@ def makeReservation(quantity, date, restaurantId):
 @[1-3](First Impure DB Call)
 @[6-14](Business Logic Pure Function)
 @[16-18](Second Impure DB Call)
-@[20-26](We build our impure sandwhich via compose)
+@[20-26](We build our impure sandwich via compose)
 @[25](**Note** This is a Ternary Operation, Does your language support Option?)
 
 ---
@@ -349,7 +340,6 @@ def makeReservation(quantity, date, restaurantId):
 ---
 
 #### Looping 
-##### Shameless Functional Programming Plug
 
 ```javascript
 // Artists with popularity <= 3 percentage of given playlist
@@ -387,8 +377,8 @@ const getHipsterArtists = (playlist) => {
 - Horizontal - Line Length |
 - Vertical - File Size |
 - Indentation |
-- Consistency |
 - Style Guide & Linter |
+- **Consistency** |
 
 ---
 
@@ -418,7 +408,7 @@ Note:
 
 #### Refactoring
 
-![Stickmen](http://deus.co.uk/images/refactoring.png)
+![Stickmen](img/Refactoring.png)
 
 ---
 
@@ -438,7 +428,6 @@ Note:
 
 ---
 
-
 #### When 
 
 - Brittle Code |
@@ -457,7 +446,7 @@ Note:
 
 +++
 
-![Technical_Debt](https://www.jeremymorgan.com/images/code-smell-2.jpg)
+![Technical_Debt](img/TechDebt.jpg)
 
 ---
 
@@ -476,8 +465,6 @@ Note:
 - Change Preventers |
 - Dispensables |
 - Couplers |
-
-> Read more at https://sourcemaking.com/refactoring/smells
 
 Note:
 - Gargantuan Proportions
@@ -499,8 +486,8 @@ Note:
 
 ### Acknowledgements
 
-- Robert "Uncle Bob" Martin |
-- Enrique Padilla |
+- Robert "Uncle Bob" Martin
+- Enrique Padilla
 
 ---
 
