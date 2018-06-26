@@ -23,7 +23,7 @@
 
 ### Why is Clean Code Important
 
-![Graph](assets/image/ProgrammerTimePieGrpah.JPG){ width=80%, height=80% }
+![Graph](img/ProgrammerTime.jpg){ width=80%, height=80% }
 
 +++
 
@@ -34,7 +34,7 @@
 
 ### Why is Clean Code Important
 
-![Graph](assets/image/productivityTime.png)
+![Graph](assets/ProductivityTime.png)
 
 Note:
 - Time is Application Age
@@ -45,25 +45,15 @@ Note:
 
 ### What is Clean Code to you?
 
-![Comic](assets/image/cleanCodeComic.png){ width: 80%, height: 80% }
-
-+++
-
 > I like my code to be **elegant** and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies **minimal** to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does **one** thing well.
 
-Note:
-- Elegant
-- Minimal
-- One
++++
+
+> Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
 
 +++
 
->Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
-
-Note:
-- Simple
-- Prose: Code is functional
-- Art / Artists
+> Clean code always looks like it was written by **someone who cares**.
 
 ---
 
@@ -73,13 +63,12 @@ Note:
 - Functions |
 - Code Readability |
 - Refactoring |
-- Kata |
+
 
 ---
 
-![Naming](assets/image/Naming.jpg)
+![Naming](img/Naming.jpg)
 
-Fun Fact: My firstborn male child will be called *Maximus*
 ---
 
 ### Naming
@@ -151,6 +140,14 @@ accountData vs account
 
 ---
 
+#### Use Problem Domain Names
+
+ - Learn the vocabulary of your users and customers
+ - Use it
+ - (But don't overdo it)
+
+---
+
 #### Avoid Mental Mapping
 
 ```python
@@ -183,14 +180,12 @@ for i in range(number_of_tasks):
 #### Good naming can replace comments
 
 ```python
-# Check to see if the employee is elegibile for bonus
-if (employee.flag and employee.rating >= 4 and employee.years > 5)
+# Check to see if the employee is eligible for bonus
+if (employee.rating >= 4 and employee.years > 5)
 
 if (employee.isEligibleForBonus())
 ```
 
-Note:
-- is / has Function Names
 ---
 
 ### Functions
@@ -280,10 +275,6 @@ private void SumShoppingCartProductsToCurrentPrice()
 
 #### Impure Sandwich
 
-![Sandwich](assets/image/cookie_sandwich.png)
-
-Fun Fact: I love ice cream sandwiches
-
 +++
 
 ```python
@@ -321,11 +312,11 @@ def canMakeReservation(quantity, date, restaurant):
 	else:
 		return None
 
-#Impure Function Call
+# Impure Function Call
 def reserve(reservation):
 	return Restaurant.reserve(reservation)
 
-# Yummy Impure Sandwhich
+# Impure Sandwhich
 def makeReservation(quantity, date, restaurantId):
 	return _.compose(
 			getRestaurant(restaurantId),
@@ -337,26 +328,23 @@ def makeReservation(quantity, date, restaurantId):
 @[6-14](Business Logic Pure Function)
 @[16-18](Second Impure DB Call)
 @[20-26](We build our impure sandwhich via compose)
-@[25](**Note** This Janky Ternary Operation, Does your language support Option?)
+@[25](**Note** This is a Ternary Operation, Does your language support Option?)
 
 ---
 
-![Comic Style Guide](assets/image/styleGuide.png)
+![Comic Style Guide](img/StyleGuide.png)
 
 ---
 
 ### Code Readability
 
-- Nested Code sucks |
+- Nested Code is :( |
 - Looping |
 - Formatting Code |
-- Broken Windows |
 
 ---
 
 #### Nested Code
-
-![Graph](assets/image/nestedIf.jpg)
 
 ---
 
@@ -401,14 +389,6 @@ const getHipsterArtists = (playlist) => {
 - Indentation |
 - Consistency |
 - Style Guide & Linter |
-
---- 
-
-#### Broken Windows
-
-+++
-
-![Windows](https://image.slidesharecdn.com/designingviolenceoutofschools-110919110142-phpapp01/95/cpted-designing-violence-out-of-schools-27-728.jpg?cb=1335528522)
 
 ---
 
@@ -492,27 +472,19 @@ Note:
 #### Code Smell Categories
 
 - Bloaters |
-- Object orientation Abusers |
+- Object Orientation Abusers |
 - Change Preventers |
 - Dispensables |
 - Couplers |
 
+> Read more at https://sourcemaking.com/refactoring/smells
+
 Note:
-- Gargantuan Porpotion
+- Gargantuan Proportions
 - Incorrect Application of OO
 - Makes change so expensive you dont want to do it
 - Pointless/uneeded
 - Excessive Coupling 
-
----
-
-# Kata
-
-Note:
-- Naming: clear and concise
-- Functions: level of abstraction, one thing, small
-- Code smells: are there any?
-- Refactor: where would you refactor
 
 ---
 
@@ -523,11 +495,14 @@ Note:
 - Make your code look like a maze |
 - Compete to see who has the most technical debt |
 
----
-
-![Image-Relative](http://giant.gfycat.com/BothLongAstrangiacoral.gif)
-
 --- 
+
+### Acknowledgements
+
+- Robert "Uncle Bob" Martin |
+- Enrique Padilla |
+
+---
 
 ## Thank you!
 ### Be sure to check out the rest of our classes!
