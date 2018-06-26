@@ -25,25 +25,14 @@
 
 ![Graph](img/ProgrammerTime.jpg){ width=80%, height=80% }
 
-+++
-
 >The ratio of time spent reading versus writing is well over 10 to 1. We are
 >constantly reading old code as part of the effort to write new code
 
 ---
 
-### Why is Clean Code Important
-
-![Graph](img/ProductivityTime.png)
-
-Note:
-- Time is Application Age
-- Technical Debt
-- Complexity of Project
-
----
-
 ### What is Clean Code to you?
+
++++
 
 > Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
 
@@ -185,7 +174,7 @@ if (employee.isEligibleForBonus())
 - A function should only do one thing |
 - One level of abstraction |
 - Less arguments are better |
-- Impure Sandwhich -> No side effects* |
+- Impure Sandwich -> No side effects* |
 
 ---
 
@@ -357,7 +346,7 @@ func getHipsterArtists(playlist) {
 	return artists
 }
 
-//Functional with ES6
+// Functional with ES6
 const getHipsterArtists = (playlist) => {
 	const maxPopularity = 3
 	return playlist.
@@ -378,7 +367,7 @@ const getHipsterArtists = (playlist) => {
 - Vertical - File Size |
 - Indentation |
 - Style Guide & Linter |
-- **Consistency** |
+- Consistency |
 
 ---
 
@@ -388,6 +377,10 @@ const getHipsterArtists = (playlist) => {
 - Refactoring |
 - Technical Debt |
 - Code Smells |
+
+---
+
+![Stickmen](img/Refactoring.png)
 
 ---
 
@@ -402,13 +395,6 @@ Note:
 - Operational: Performance, SLA
 - Developmental: Developers QOL
 - Raise hand if you have had a refactoring sprint or investment to just improve code readability
-
-
----
-
-#### Refactoring
-
-![Stickmen](img/Refactoring.png)
 
 ---
 
@@ -428,7 +414,7 @@ Note:
 
 ---
 
-#### When 
+#### When?  
 
 - Brittle Code |
 - Turn around times on Functional Requirements increased |
@@ -442,11 +428,11 @@ Note:
 
 +++
 
-> The implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer
+![Technical_Debt](img/TechDebt.jpg)
 
 +++
 
-![Technical_Debt](img/TechDebt.jpg)
+> The implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer
 
 ---
 
