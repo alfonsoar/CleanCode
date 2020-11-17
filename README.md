@@ -4,7 +4,7 @@ Notes for Clean Code
 
 ## Local set-up
 
-1. Ensure you ave docker installed. If not checkout the installation
+1. Ensure you have docker installed. If not checkout the installation
    [steps](https://docs.docker.com/get-docker/).
 2. Install the GitPitch Trial mode docker image. More details [here](https://docs.gitpitch.com/#/free-trial)
    ```bash
