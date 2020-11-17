@@ -34,11 +34,8 @@
 
 ### What is Clean Code to you?
 
-+++
 
 > Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
-
-+++
 
 > Clean code always looks like it was written by **someone who cares**.
 
