@@ -426,18 +426,6 @@ Note:
 
 ---
 
-#### Technical Debt
-
-+++
-
-![Technical_Debt](img/TechDebt.jpg)
-
-+++
-
-> The implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer
-
----
-
 #### Code Smells
 
 +++
@@ -475,6 +463,8 @@ Note:
 ### Acknowledgements
 
 - Robert "Uncle Bob" Martin
+- Enrique Padilla (Ex-GS)
+- Aditya Dalal (GS)
 ---
 
 ## Thank you!
