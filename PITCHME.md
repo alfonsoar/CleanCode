@@ -3,7 +3,7 @@
 #### **NIC** Practical Programmer Series
 
 <br /><br /><br /><br /><br />
-##### Joing our Symphony room: "Practical Programmer Series"
+##### Join our Symphony room: "Practical Programmer Series"
 
 ---
 
