@@ -109,7 +109,7 @@ getActiveAccountInfo();
 
 @[1-3](Which one would you use to get the Active Account?)
 
-+++
+---
 
 ##### Variable Names
 
@@ -141,7 +141,7 @@ for i in range(34):
 
 @[2](Clearly everyone knows why we multiply times 4 and divide by 5)
 
-+++ 
+---
 
 #### Searchable Names
 
@@ -225,7 +225,7 @@ public void Checkout()
 @[16-23](Finally we charge the billingInfo card the currentPrice)
 @[1-24](Think we can use our magic refactoring wand?)
 
-+++
+---
 
 ```java
 public void Checkout()
