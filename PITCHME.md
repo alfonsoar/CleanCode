@@ -35,9 +35,9 @@
 ### What is Clean Code to you?
 
 
-> Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
+- > Clean code is **simple** and direct. Clean code reads like well-written **prose**. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
 
-> Clean code always looks like it was written by **someone who cares**.
+- > Clean code always looks like it was written by **someone who cares**.
 
 ---
 
@@ -73,8 +73,6 @@ public List<int[]> getThem() {
 
 - What does this code do? |
 - Why does it do it? |
-
-+++
 
 ---
 
@@ -154,7 +152,6 @@ for i in range(number_of_tasks):
 ```
 @[1-8](How about now?)
 @[4](Although this name is great, it shadows a built in function)
-@[3, 5](Why acces via array? Why not For In?)
 
 ---
 
@@ -256,8 +253,6 @@ private void SumShoppingCartProductsToCurrentPrice()
 
 #### Impure Sandwich
 
-+++
-
 ```python
 # Simplified version of making a reservation at a restaurant
 def makeReservation(quantity, date, restaurantId):
@@ -275,7 +270,7 @@ def makeReservation(quantity, date, restaurantId):
 @[4-6](This is our business logic)
 @[7](More of this impure sandwich!)
 
-+++
+---
 
 ```python
 # Impure Function Call
@@ -401,17 +396,13 @@ Note:
 
 #### Why Refactor
 
-+++
-
->By continuously improving the design of code, we make it easier and easier to work with.
+- >By continuously improving the design of code, we make it easier and easier to work with.
 
 ---
 
 #### What Is Refactoring
 
-+++
-
-> Code Refactoring is the process of clarifying and simplifying the design of existing code, without changing its behavior.
+- > Code Refactoring is the process of clarifying and simplifying the design of existing code, without changing its behavior.
 
 ---
 
@@ -427,9 +418,7 @@ Note:
 
 #### Code Smells
 
-+++
-
-> A code smell is a surface indication that usually corresponds to a deeper problem in the system
+- > A code smell is a surface indication that usually corresponds to a deeper problem in the system
 
 ---
 
