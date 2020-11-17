@@ -6,10 +6,9 @@
 
 ### Practical Programmer Series
 
-- **Clean Code**
-- Testable Code
 - Design Patterns
 - Functional Programming
+- **Clean Code**
 
 ---
 
@@ -473,9 +472,6 @@ Note:
 ### Acknowledgements
 
 - Robert "Uncle Bob" Martin
-- Enrique Padilla
-
 ---
 
 ## Thank you!
-### Be sure to check out the rest of our classes!
