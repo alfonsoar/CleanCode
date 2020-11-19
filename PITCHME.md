@@ -55,13 +55,12 @@
 - Meaningful distinctions | 
 - Searchable names |
 - Avoid mental mapping |
-- Nouns for classes and variables and verbs for functions |
 
 ---
 #### Intention revealing names
 
 ```java
-public List<int[]> getThem() {
+public List<int[]> getThem(int[][] theList) {
   List<int[]> list1 = new ArrayList<int[]>();
   for (int[] x : theList)
     if (x[0] == 4)
@@ -78,7 +77,7 @@ public List<int[]> getThem() {
 #### Compared to
 
 ```java
-public List<Cell> getFlaggedCells() {
+public List<Cell> getFlaggedCells(Cell[] gameBoard) {
   List<Cell> flaggedCells = new ArrayList<Cell>();
   for (Cell cell : gameBoard)
     if (cell.isFlagged())
@@ -368,28 +367,12 @@ const getHipsterArtists = (playlist) => {
 
 ### Refactoring
 
-- Types of Requirements |
 - Refactoring |
-- Technical Debt |
 - Code Smells |
 
 ---
 
 ![Stickmen](img/Refactoring.png)
-
----
-
-#### Types of Requirements
-
-- Functional |
-- Operational | 
-- Developmental |
-
-Note:
-- Functional: Use cases, features
-- Operational: Performance, SLA
-- Developmental: Developers QOL
-- Raise hand if you have had a refactoring sprint or investment to just improve code readability
 
 ---
 
